@@ -53,6 +53,7 @@ programming environment for using the extended labels.
 %doc %{_texmfdistdir}/doc/latex/smartref/README
 %doc %{_texmfdistdir}/doc/latex/smartref/smartref-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/smartref/smartref-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +64,5 @@ programming environment for using the extended labels.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
