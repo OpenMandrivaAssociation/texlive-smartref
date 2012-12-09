@@ -54,3 +54,17 @@ programming environment for using the extended labels.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9-2
++ Revision: 756071
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.9-1
++ Revision: 719553
+- texlive-smartref
+- texlive-smartref
+- texlive-smartref
+- texlive-smartref
+
