@@ -6,7 +6,7 @@
 # catalog-version 1.9
 Name:		texlive-smartref
 Version:	1.9
-Release:	3
+Release:	4
 Summary:	Extend LaTeX's \ref capability
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/smartref
