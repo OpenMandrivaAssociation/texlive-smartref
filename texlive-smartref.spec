@@ -1,18 +1,12 @@
-# revision 20311
-# category Package
-# catalog-ctan /macros/latex/contrib/smartref
-# catalog-date 2010-11-01 15:44:19 +0100
-# catalog-license lppl
-# catalog-version 1.9
 Name:		texlive-smartref
-Version:	1.9
-Release:	12
+Version:	20311
+Release:	1
 Summary:	Extend LaTeX's \ref capability
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/smartref
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ label was set. Many commands are provided to serve as a macro
 programming environment for using the extended labels.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,24 +41,10 @@ programming environment for using the extended labels.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.9-2
-+ Revision: 756071
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.9-1
-+ Revision: 719553
-- texlive-smartref
-- texlive-smartref
-- texlive-smartref
-- texlive-smartref
-
