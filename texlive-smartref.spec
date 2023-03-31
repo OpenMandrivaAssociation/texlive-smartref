@@ -1,6 +1,6 @@
 Name:		texlive-smartref
 Version:	20311
-Release:	1
+Release:	2
 Summary:	Extend LaTeX's \ref capability
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/smartref
