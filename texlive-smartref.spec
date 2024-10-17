@@ -3,7 +3,7 @@ Version:	20311
 Release:	2
 Summary:	Extend LaTeX's \ref capability
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/smartref
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/smartref
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/smartref.doc.r%{version}.tar.xz
